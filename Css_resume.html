@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burhan C - Resume</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #eeeeee;
+        color: #222;
+        margin: 0;
+        padding: 30px;
+      }
+      .resume {
+        max-width: 900px;
+        margin: auto;
+        background-color: white;
+        padding: 30px;
+        border: 1px solid #ccc;
+      }
+      .header {
+        text-align: center;
+        padding: 20px;
+        background-color: #222;
+        color: white;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 35px;
+      }
+      .header p {
+        margin: 8px 0;
+      }
+      .contact {
+        margin-top: 15px;
+      }
+      .contact a {
+        color: #8ed1fc;
+        text-decoration: none;
+      }
+      .contact a:hover {
+        text-decoration: underline;
+      }
+
+      nav {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 12px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #0077b6;
+      }
+
+      section {
+        margin-top: 30px;
+      }
+      h2 {
+        color: #0077b6;
+        border-bottom: 2px solid #0077b6;
+        padding-bottom: 5px;
+      }
+      p {
+        line-height: 1.6;
+      }
+
+      /* Skills */
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .skill {
+        background-color: #e8f4fa;
+        border: 1px solid #0077b6;
+        padding: 8px 14px;
+        border-radius: 5px;
+      }
+      .skill:hover {
+        background-color: #0077b6;
+        color: white;
+        cursor: pointer;
+      }
+
+      /* Table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid #999;
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: #0077b6;
+        color: white;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      /* Projects */
+      .project {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+      .project:hover {
+        border-color: #0077b6;
+        cursor: pointer;
+      }
+      .project h3 {
+        margin-top: 0;
+        color: #333;
+      }
+      /* Project Details */
+      details {
+        margin-top: 10px;
+      }
+      summary {
+        color: #0077b6;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      /* Mobile */
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+        .resume {
+          padding: 15px;
+        }
+        .header h1 {
+          font-size: 28px;
+        }
+        nav a {
+          display: block;
+          margin: 8px;
+        }
+        table {
+          font-size: 12px;
+        }
+        th,
+        td {
+          padding: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume">
+      <!-- HEADER -->
+      <div class="header">
+        <h1>Burhan C</h1>
+        <p>Python Developer | Full-Stack MERN | Software Engineer</p>
+        <div class="contact">
+          Email:
+          <a href="mailto:cyclegarburhan@gmail.com">
+            cyclegarburhan@gmail.com
+          </a>
+          | Phone: +91 8123794673 | Hubli, Karnataka
+        </div>
+      </div>
+
+      <!-- NAVIGATION -->
+      <nav>
+        <a href="#objective">Objective</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+      </nav>
+
+      <!-- OBJECTIVE -->
+      <section id="objective">
+        <h2>Objective</h2>
+        <p>
+          Motivated BCA student with a strong foundation in Python, JavaScript,
+          Java, SQL and full-stack web development. Looking for an opportunity
+          to apply my technical skills to real-world projects and continue
+          learning in the IT field.
+        </p>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education">
+        <h2>Qualification</h2>
+        <table>
+          <tr>
+            <th>Sl.No</th>
+            <th>College / School</th>
+            <th>Course</th>
+            <th>Percentage / SGPA</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>KLE PC Jabin Science College</td>
+            <td>BCA</td>
+            <td>7.28 SGPA</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Sukruti Science College</td>
+            <td>PUC - Science</td>
+            <td>62.5%</td>
+            <td>2023</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill">Python</div>
+          <div class="skill">Java</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">C</div>
+          <div class="skill">SQL</div>
+          <div class="skill">React.js</div>
+          <div class="skill">Node.js</div>
+          <div class="skill">Express.js</div>
+          <div class="skill">MongoDB</div>
+          <div class="skill">Power BI</div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Pet Care Management System</h3>
+          <p>MERN Stack Project</p>
+          <details>
+            <summary>View Project Details</summary>
+            <ul>
+              <li>Developed a full-stack web application using MERN.</li>
+              <li>Implemented REST APIs and JWT authentication.</li>
+              <li>Added appointment and queue management.</li>
+              <li>Used MVC architecture for the backend.</li>
+            </ul>
+          </details>
+        </div>
+        <div class="project">
+          <h3>GoCart - E-Commerce Website</h3>
+          <p>MERN Stack Project</p>
+          <details>
+            <summary>View Project Details</summary>
+            <ul>
+              <li>Developed an e-commerce website using React.js.</li>
+              <li>Used Node.js, Express.js and MongoDB.</li>
+              <li>Implemented product and user management.</li>
+              <li>Created a responsive interface using HTML and CSS.</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+      <!-- CERTIFICATES -->
+      <section id="certificates">
+        <h2>Certificates</h2>
+        <ul>
+          <li>Deloitte Australia - Data Analytics Job Simulation</li>
+          <li>Forage Academy - Data Labeling Certification</li>
+          <li>Full Stack Web Development Certification</li>
+          <li>Web Development Certification</li>
+        </ul>
+      </section>
+      <!-- ACHIEVEMENTS -->
+      <section>
+        <h2>Achievements</h2>
+        <ul>
+          <li>Completed data analytics job simulation.</li>
+          <li>Completed data labeling certification.</li>
+          <li>Developed full-stack web development projects.</li>
+        </ul>
+      </section>
+      <!-- HOBBIES -->
+      <section>
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Gaming</li>
+          <li>Playing outdoor games</li>
+          <li>Reading</li>
+          <li>Watching movies</li>
+        </ul>
+      </section>
+      <!-- DECLARATION -->
+      <section>
+        <h2>Declaration</h2>
+        <p>
+          I hereby declare that the above information is true to the best of my
+          knowledge.
+        </p>
+        <p>Date: ____________________</p>
+        <p>Place: ____________________</p>
+        <p>Signature: ____________________</p>
+      </section>
+    </div>
+  </body>
+</html>
