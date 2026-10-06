@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>Transition & Animations</title>
+    <style>
+      button {
+        margin-left: 300px;
+        width: 100px;
+        height: 100px;
+        background: burlywood;
+        border: none;
+        border-radius: 30px;
+        transition: 1s;
+      }
+      button:hover {
+        background-color: brown;
+        transform: scale(1.1);
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background: rgb(172, 84, 84);
+        animation-name: rahul;
+        animation-delay: 2s;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation: rahul 1s ease alternate infinite;
+      }
+      @keyframes rahul {
+        to {
+          transform: scale(0);
+        }
+        from {
+          transform: scale(300px);
+        }
+      }
+      .load {
+        width: 100px;
+        height: 100px;
+        /* border: 5px solid gray; */
+        border-radius: 50%;
+        /* border-top: 1px solid blue; */
+        animation: spin 1s linear infinite;
+        border: 5px solid grey;
+        border-top: 5px solid blue;
+      }
+      .triangle {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid rgb(72, 8, 8);
+        animation: arbab 2s ease alternate infinite;
+      }
+      @keyframes arbab {
+        to {
+          transform: scale(0);
+        }
+        from {
+          transform: scale(400px);
+        }
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(127, 180, 255);
+        border-radius: 50%;
+        animation: cir 1s ease alternate infinite;
+      }
+      @keyframes cir {
+        to {
+          transform: scale(0);
+        }
+        from {
+          transform: scale(300px);
+        }
+      }
+
+      .box1 {
+        width: 150px;
+        height: 100px;
+        background: rgb(97, 56, 136);
+        animation: box1 1s ease alternate infinite;
+      }
+      @keyframes box1 {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transition & Animations</h1>
+    <button>Action</button>
+    <div class="box"></div>
+    <br /><br /><br /><br />
+
+    <div class="load"></div>
+    <br /><br /><br /><br />
+
+    <div class="triangle"></div>
+    <br /><br /><br /><br />
+
+    <div class="circle"></div>
+    <br /><br /><br /><br />
+
+    <div class="box1"></div>
+  </body>
+</html>
