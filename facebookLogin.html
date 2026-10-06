@@ -1,0 +1,177 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+
+        background-color: white;
+      }
+
+      form {
+        width: 540px;
+
+        margin-top: 280px;
+
+        margin-left: 115px;
+
+        background-color: white;
+
+        padding: 20px;
+      }
+
+      h3 {
+        margin-top: 0px;
+
+        margin-left: 0px;
+
+        margin-bottom: 25px;
+
+        font-size: 20px;
+      }
+
+      input {
+        width: 100%;
+
+        height: 70px;
+
+        margin-left: 0px;
+
+        margin-bottom: 12px;
+
+        padding: 15px;
+
+        border: 1px solid gray;
+
+        border-radius: 17px;
+
+        font-size: 16px;
+      }
+
+      input:focus {
+        outline: none;
+
+        border: 2px solid rgb(71, 71, 224);
+      }
+
+      #login {
+        width: 100%;
+
+        height: 50px;
+
+        margin-top: 5px;
+
+        margin-left: 0px;
+
+        border-radius: 25px;
+
+        border: none;
+
+        background-color: rgb(71, 71, 224);
+
+        color: white;
+
+        font-size: 16px;
+      }
+
+      #login:hover {
+        background-color: rgb(50, 50, 200);
+      }
+
+      #forgetpw {
+        display: block;
+
+        margin: 30px auto 0px;
+
+        border: none;
+
+        background-color: white;
+
+        color: black;
+
+        font-size: 16px;
+
+        font-weight: bold;
+
+        width: 100%;
+
+        height: 50px;
+
+        margin-top: 5px;
+
+        margin-left: 0px;
+      }
+
+      #forgetpw:hover {
+        text-decoration: underline;
+
+        border-radius: 25px;
+
+        background-color: rgb(245, 245, 255);
+      }
+
+      #create {
+        display: block;
+
+        width: 95%;
+
+        height: 55px;
+
+        margin: 75px auto 25px;
+
+        border: 1px solid rgb(71, 71, 224);
+
+        border-radius: 30px;
+
+        background-color: white;
+
+        color: rgb(71, 71, 224);
+
+        font-size: 16px;
+      }
+
+      #create:hover {
+        background-color: rgb(245, 245, 255);
+      }
+
+      #meta {
+        text-align: center;
+
+        font-size: 17px;
+
+        color: gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <h3>Log in to Facebook</h3>
+
+      <input
+        type="email"
+        ,required
+        placeholder="Email address or mobile number"
+      />
+      <input type="password" required placeholder="Password" /><button
+        id="login"
+        type="submit"
+      >
+        Log in
+      </button>
+
+      <button id="forgetpw" type="button">Forgotten password?</button>
+
+      <button id="create" type="button">Create new account</button>
+
+      <div id="meta">∞ Meta</div>
+    </form>
+  </body>
+</html>
