@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureFest 2026</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+      }
+      header {
+        background: linear-gradient(90deg, #312e81, #2563eb);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 1.2rem;
+      }
+      nav {
+        background: #020617;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 15px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      nav a {
+        color: #60a5fa;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        color: #c4b5fd;
+      }
+      #home {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background:
+          linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.8)),
+          url('https://images.unsplash.com/photo-1518770660439-4636190af475')
+            no-repeat center/cover;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+      }
+      #home h2 {
+        font-size: 3.5rem;
+        color: #93c5fd;
+      }
+      #home p {
+        font-size: 1.3rem;
+        max-width: 650px;
+      }
+      .section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 10%;
+        gap: 40px;
+      }
+      .section:nth-child(even) {
+        flex-direction: row-reverse;
+        background: #1e293b;
+      }
+      .section:nth-child(odd) {
+        background: #0f172a;
+      }
+      .section-content {
+        flex: 1;
+        padding: 20px;
+      }
+      .section-content h2 {
+        color: #60a5fa;
+        font-size: 2rem;
+      }
+      .section-content p {
+        line-height: 1.7;
+        color: #cbd5e1;
+      }
+      .section img {
+        flex: 1;
+        max-width: 500px;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+      }
+      .schedule-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #020617;
+        margin-top: 30px;
+      }
+      .schedule-table th,
+      .schedule-table td {
+        border: 1px solid #334155;
+        padding: 15px;
+        text-align: center;
+      }
+      .schedule-table th {
+        background: #312e81;
+        color: white;
+      }
+      .schedule-table tr:hover {
+        background: #1e293b;
+      }
+      .section-light {
+        background: #111827;
+        padding: 80px 10%;
+        text-align: center;
+      }
+      .section-light > h2 {
+        color: #60a5fa;
+        font-size: 2.5rem;
+      }
+      .speakers {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+      .speaker-card {
+        background: #1e293b;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s;
+      }
+      .speaker-card:hover {
+        transform: translateY(-8px);
+      }
+      .speaker-card img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+      .speaker-card h3 {
+        color: #93c5fd;
+      }
+      .speaker-card p {
+        color: #cbd5e1;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      form input,
+      form button {
+        padding: 14px;
+        width: 300px;
+        border-radius: 8px;
+        border: none;
+      }
+      form input {
+        background: #1e293b;
+        color: white;
+      }
+      form input::placeholder {
+        color: #94a3b8;
+      }
+      form button {
+        background: #6366f1;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      form button:hover {
+        background: #8b5cf6;
+      }
+      footer {
+        background: #020617;
+        color: #93c5fd;
+        padding: 40px;
+        text-align: center;
+      }
+      footer p {
+        color: #cbd5e1;
+      }
+      @media (max-width: 768px) {
+        nav {
+          flex-wrap: wrap;
+          gap: 15px;
+        }
+        #home h2 {
+          font-size: 2.3rem;
+        }
+        .section {
+          flex-direction: column !important;
+        }
+        .section img {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>FutureFest 2026</h1>
+      <p>Technology • Innovation • Future</p>
+    </header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#register">Register</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+      <h2>Welcome to FutureFest 2026</h2>
+      <p>
+        Explore the future of technology, artificial intelligence,
+        cybersecurity, robotics and digital innovation at one exciting event.
+      </p>
+    </section>
+    <section id="about" class="section">
+      <div class="section-content">
+        <h2>About the Event</h2>
+        <p>
+          FutureFest 2026 brings together students, developers, entrepreneurs,
+          researchers and technology enthusiasts.
+        </p>
+        <p>
+          Discover emerging technologies, experience interactive demonstrations
+          and connect with innovators who are building the future.
+        </p>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+        alt="Modern Robot"
+      />
+    </section>
+    <section id="schedule" class="section">
+      <div class="section-content">
+        <h2>Event Schedule</h2>
+        <table class="schedule-table">
+          <tr>
+            <th>Time</th>
+            <th>Session</th>
+            <th>Speaker</th>
+          </tr>
+          <tr>
+            <td>09:30 AM</td>
+            <td>Opening Ceremony</td>
+            <td>Organizing Committee</td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td>Future of Artificial Intelligence</td>
+            <td>Dr. Meera Sharma</td>
+          </tr>
+          <tr>
+            <td>11:30 AM</td>
+            <td>Workshop: Robotics & Automation</td>
+            <td>Tech Innovation Team</td>
+          </tr>
+          <tr>
+            <td>01:00 PM</td>
+            <td>Lunch Break</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>02:00 PM</td>
+            <td>Panel: Future of Technology</td>
+            <td>Industry Experts</td>
+          </tr>
+          <tr>
+            <td>04:00 PM</td>
+            <td>Innovation Showcase</td>
+            <td>FutureTech Lab</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="speakers" class="section-light">
+      <h2>Featured Speakers</h2>
+      <div class="speakers">
+        <div class="speaker-card">
+          <img
+            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+            alt="Technology Speaker"
+          />
+          <h3>Dr. Meera Sharma</h3>
+          <p>AI Research Scientist</p>
+          <p>
+            Expert in artificial intelligence, machine learning and intelligent
+            systems.
+          </p>
+        </div>
+        <div class="speaker-card">
+          <img
+            src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+            alt="Business Speaker"
+          />
+          <h3>Arjun Kapoor</h3>
+          <p>Technology Entrepreneur</p>
+          <p>
+            Founder and innovator working on next-generation digital technology
+            solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="register" class="section">
+      <div class="section-content">
+        <h2>Register Now</h2>
+        <form>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <button type="submit">Submit Registration</button>
+        </form>
+      </div>
+    </section>
+    <footer id="contact">
+      <h2>Contact Us</h2>
+      <p>Phone: XXXX YYYY ZZZZ</p>
+      <p>Email: info@futurefest2026.com</p>
+      <p>© 2026 FutureFest. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
